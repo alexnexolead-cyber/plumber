@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "pages": 11
+    },
+    {
+      "width": 375,
+      "pages": 11
+    },
+    {
+      "width": 390,
+      "pages": 11
+    },
+    {
+      "width": 430,
+      "pages": 11
+    },
+    {
+      "width": 768,
+      "pages": 11
+    },
+    {
+      "width": 1024,
+      "pages": 11
+    },
+    {
+      "width": 1440,
+      "pages": 11
+    }
+  ],
+  "failures": []
+}
