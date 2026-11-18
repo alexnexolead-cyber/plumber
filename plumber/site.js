@@ -85,7 +85,8 @@ document.querySelectorAll('form[data-source]').forEach((form, formIndex) => {
     if (!config.endpoint || config.endpoint.includes('REPLACE_WITH_YOUR_ID')) { alert('Online booking is not connected yet. Please call the phone number shown on this page.'); return; }
     const startedAt = Date.now();
     let succeeded = false;
-    const payload = {...values, service: values.service || form.dataset.service,
+    const payload = {...values, customer_timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                     service: values.service || form.dataset.service,
       source: form.dataset.source, page_url: location.href, submitted_at: new Date().toISOString()};
     const originalText = button.textContent;
     button.disabled = true;
